@@ -12,7 +12,13 @@ def calcvalue(num):
     else:
         print(str(num) + "は偶数")
 
+#固定から可変に変更
 #引数を変数に代入(リストに設定)
-numbers = (int(args[1]), int(args[2]), int(args[3]))
-for number in numbers:
-    calcvalue(number)
+#numbers = (int(args[1]), int(args[2]), int(args[3]))
+#for number in numbers:
+#    calcvalue(number)
+
+#引数をIdx：0を削除してidx：1以降の値で関数呼び出し
+del args[0]
+for i in args:
+    calcvalue(int(i))
