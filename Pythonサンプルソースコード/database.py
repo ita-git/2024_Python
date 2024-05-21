@@ -15,6 +15,7 @@ ENGINE = create_engine(
     DATABASE,
     encoding = "utf-8",
     echo=True # True:実行のたびにSQLが出力
+#    echo=False # True:実行のたび、SQL出力しない
 )
 
 # Sessionの作成
